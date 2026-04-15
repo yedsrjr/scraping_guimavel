@@ -1,0 +1,242 @@
+﻿[
+    {
+        "NOME":  "VOLKSWAGEN NIVUS 1.0 200 TSI TOTAL FLEX HIGHLINE AUTOMÁTICO",
+        "MARCA":  "VOLKSWAGEN",
+        "ANO":  "2023/ 2024",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "38.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/ecompletocarros/sites/semfoto_1.jpg"
+    },
+    {
+        "NOME":  "FORD ECOSPORT 1.5 TI-VCT FLEX TITANIUM AUTOMÁTICO",
+        "MARCA":  "FORD",
+        "ANO":  "2019/ 2020",
+        "COR":  "Prata",
+        "CAMBIO":  "Automático",
+        "KM":  "120.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/345038/veiculoInfoVeiculoImagesMini/vehicle_image_1775854592_9affd81c471fdfe807f334d6d181a414.jpeg"
+    },
+    {
+        "NOME":  "VOLKSWAGEN POLO 1.0 MPI TOTAL FLEX MANUAL",
+        "MARCA":  "VOLKSWAGEN",
+        "ANO":  "2023/ 2024",
+        "COR":  "Branco",
+        "CAMBIO":  "Manual",
+        "KM":  "48.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/338951/veiculoInfoVeiculoImagesMini/vehicle_image_1775160408_35ef0caa47598d431617114f3f689955.jpeg"
+    },
+    {
+        "NOME":  "HYUNDAI I30 2.0 MPFI GLS 16V GASOLINA 4P AUTOMÁTICO",
+        "MARCA":  "HYUNDAI",
+        "ANO":  "2010/ 2010",
+        "COR":  "Prata",
+        "CAMBIO":  "Automático",
+        "KM":  "98.000 KM",
+        "TIPO":  "Gasolina",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/335621/veiculoInfoVeiculoImagesMini/vehicle_image_1775160298_c210ab69f2f2cb2599917bc1d3a85fec.jpeg"
+    },
+    {
+        "NOME":  "CHEVROLET TRACKER 1.8 MPFI LTZ 4X2 16V FLEX 4P AUTOMÁTICO",
+        "MARCA":  "CHEVROLET",
+        "ANO":  "2015/ 2015",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "76.700 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/321539/veiculoInfoVeiculoImagesMini/vehicle_image_1774296785_c3fc67f7461e127f603a209c4b2ffe0b.jpeg"
+    },
+    {
+        "NOME":  "PEUGEOT 2008 1.6 16V FLEX ALLURE 4P AUTOMÁTICO",
+        "MARCA":  "PEUGEOT",
+        "ANO":  "2015/ 2016",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "115.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/317620/veiculoInfoVeiculoImagesMini/vehicle_image_1774096067_032c98b148ac8732469b57e3e6995dd2.jpeg"
+    },
+    {
+        "NOME":  "L200 2.5 SPORT HPE-S 4X4 CD AUTOMÁTICO",
+        "MARCA":  "MITSUBISHI",
+        "ANO":  "2017/ 2018",
+        "COR":  "Prata",
+        "CAMBIO":  "Automático",
+        "KM":  "105.000 KM",
+        "TIPO":  "Diesel",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/317456/veiculoInfoVeiculoImagesMobile/vehicle_image_1774385551_3ae1f5b538daeeb16ec9a2f7d7f81ee5.jpeg"
+    },
+    {
+        "NOME":  "VOLKSWAGEN CROSS UP 1.0 TSI 12V FLEX 4P MANUAL",
+        "MARCA":  "VOLKSWAGEN",
+        "ANO":  "2017/ 2018",
+        "COR":  "Vermelho",
+        "CAMBIO":  "Manual",
+        "KM":  "124.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/296126/veiculoInfoVeiculoImagesMini/vehicle_image_1772806432_c375c53109bc5a35a3869203fb7ab8d2.jpeg"
+    },
+    {
+        "NOME":  "HYUNDAI HB20S 1.0 COMFORT PLUS 12V TURBO FLEX 4P AUTOMÁTICO",
+        "MARCA":  "HYUNDAI",
+        "ANO":  "2024/ 2025",
+        "COR":  "Preto",
+        "CAMBIO":  "Automático",
+        "KM":  "36.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/292371/veiculoInfoVeiculoImagesMini/vehicle_image_1772222606_88b00b3be0b5a96486ae0b796989bcb0.jpeg"
+    },
+    {
+        "NOME":  "CAOA CHERY TIGGO 5x PRO 1.5 TCI FLEX HYBRID CVT",
+        "MARCA":  "CAOA CHERY",
+        "ANO":  "2022/ 2023",
+        "COR":  "Preto",
+        "CAMBIO":  "CVT",
+        "KM":  "18.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/289378/veiculoInfoVeiculoImagesMini/vehicle_image_1771937446_4f82eb70eef85b9fae80fcb3b693a941.jpeg"
+    },
+    {
+        "NOME":  "HYUNDAI CRETA 1.6 16V FLEX ATTITUDE AUTOMÁTICO",
+        "MARCA":  "HYUNDAI",
+        "ANO":  "2020/ 2020",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "113.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/288661/veiculoInfoVeiculoImagesMini/vehicle_image_1771962665_a95715eb8f535e7de01d3dc271e6e171.jpeg"
+    },
+    {
+        "NOME":  "JEEP COMPASS 2.0 16V FLEX LIMITED AUTOMÁTICO",
+        "MARCA":  "JEEP",
+        "ANO":  "2020/ 2021",
+        "COR":  "Azul",
+        "CAMBIO":  "Automático",
+        "KM":  "49.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/288416/veiculoInfoVeiculoImagesMini/vehicle_image_1771880349_40f4d4fbc1afc6e2499bce960b1acbb5.jpeg"
+    },
+    {
+        "NOME":  "FIAT SIENA 1.0 MPI FIRE 8V FLEX 4P MANUAL",
+        "MARCA":  "FIAT",
+        "ANO":  "2011/ 2011",
+        "COR":  "Prata",
+        "CAMBIO":  "Manual",
+        "KM":  "338.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/288021/veiculoInfoVeiculoImagesMini/vehicle_image_1773088098_d526035af64da9f107039594e4aa7947.jpeg"
+    },
+    {
+        "NOME":  "CHEVROLET CRUZE 1.8 LT NB 16V FLEX 4P AUTOMÁTICO",
+        "MARCA":  "CHEVROLET",
+        "ANO":  "2015/ 2016",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "85.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/287602/veiculoInfoVeiculoImagesMini/vehicle_image_1771681170_858172182f831aba5bd93ed93f69a200.jpeg"
+    },
+    {
+        "NOME":  "RENAULT DUSTER 1.6 16V SCE FLEX INTENSE PLUS X-TRONIC",
+        "MARCA":  "RENAULT",
+        "ANO":  "2024/ 2025",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "59.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/272236/veiculoInfoVeiculoImagesMini/vehicle_image_1773749745_9ac9fba0b4c9a9799bae67237334c55a.jpeg"
+    },
+    {
+        "NOME":  "JAECOO 7 1.5 TGDI PHEV LUXURY DHT",
+        "MARCA":  "JAECOO",
+        "ANO":  "2025/ 2026",
+        "COR":  "Prata",
+        "CAMBIO":  "Automático",
+        "KM":  "0 KM",
+        "TIPO":  "Elétrico",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/268466/veiculoInfoVeiculoImagesMini/vehicle_image_1765462125_804705888f6cddd0739d5bbd5a1fe1e5.jpeg"
+    },
+    {
+        "NOME":  "NISSAN KICKS 1.6 16V FLEXSTART SENSE XTRONIC",
+        "MARCA":  "NISSAN",
+        "ANO":  "2023/ 2024",
+        "COR":  "Branco",
+        "CAMBIO":  "CVT",
+        "KM":  "72.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/268097/veiculoInfoVeiculoImagesMini/vehicle_image_1765203772_4da20b67563e87109407314682832aa6.jpeg"
+    },
+    {
+        "NOME":  "FIAT PALIO 1.0 MPI FIRE WAY 8V FLEX 4P MANUAL",
+        "MARCA":  "FIAT",
+        "ANO":  "2015/ 2015",
+        "COR":  "Cinza",
+        "CAMBIO":  "Manual",
+        "KM":  "150.937 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/264835/veiculoInfoVeiculoImagesMini/vehicle_image_1764099455_fb141a145678148b81689fbf1b5d4d77.jpeg"
+    },
+    {
+        "NOME":  "HONDA CIVIC 2.0 LXR 16V FLEX 4P AUTOMÁTICO",
+        "MARCA":  "HONDA",
+        "ANO":  "2016/ 2016",
+        "COR":  "Preto",
+        "CAMBIO":  "Automático",
+        "KM":  "122.000 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/263130/veiculoInfoVeiculoImagesMini/vehicle_image_1763054381_188591e621b6298dd394aff2766ba3f4.jpeg"
+    },
+    {
+        "NOME":  "CAOA CHERY TIGGO 8 1.6 TGDI GASOLINA TXS DCT",
+        "MARCA":  "CAOA CHERY",
+        "ANO":  "2021/ 2022",
+        "COR":  "Prata",
+        "CAMBIO":  "CVT",
+        "KM":  "72.000 KM",
+        "TIPO":  "Gasolina",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/261772/veiculoInfoVeiculoImagesMini/vehicle_image_1763152087_31d0ffdc90cf5393d6e98e6fed86aac6.jpeg"
+    },
+    {
+        "NOME":  "FIAT FREEMONT 2.4 PRECISION 16V GASOLINA 4P AUTOMÁTICO",
+        "MARCA":  "FIAT",
+        "ANO":  "2011/ 2012",
+        "COR":  "Prata",
+        "CAMBIO":  "Automático",
+        "KM":  "115.200 KM",
+        "TIPO":  "Gasolina",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/254596/veiculoInfoVeiculoImagesMini/vehicle_image_1758833791_2baa5c99b11598d590e45d95b398a7dc.jpeg"
+    },
+    {
+        "NOME":  "VOLKSWAGEN AMAROK 2.0 SE 4X4 CD 16V TURBO INTERCOOLER DIESEL 4P MANUAL",
+        "MARCA":  "VOLKSWAGEN",
+        "ANO":  "2012/ 2012",
+        "COR":  "Prata",
+        "CAMBIO":  "Manual",
+        "KM":  "280.000 KM",
+        "TIPO":  "Diesel",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/249387/veiculoInfoVeiculoImagesMini/vehicle_image_1755547610_cc988147bd3475e8933e1cc39c51077e.jpeg"
+    },
+    {
+        "NOME":  "HONDA Biz 125i Flex",
+        "MARCA":  "HONDA",
+        "ANO":  "2020/ 2020",
+        "COR":  "Vermelho",
+        "CAMBIO":  null,
+        "KM":  "10.500 KM",
+        "TIPO":  "Flex",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/ecompletocarros/sites/semfoto_1.jpg"
+    },
+    {
+        "NOME":  "VOLKSWAGEN AMAROK 3.0 V6 DIESEL EXTREME AUTOMÁTICO",
+        "MARCA":  "VOLKSWAGEN",
+        "ANO":  "2023/ 2023",
+        "COR":  "Branco",
+        "CAMBIO":  "Automático",
+        "KM":  "20.000 KM",
+        "TIPO":  "Diesel",
+        "FOTO":  "https://s3.ecompletocarros.dev/images/lojas/98/veiculos/217243/veiculoInfoVeiculoImagesMini/vehicle_image_1731525866_8a977966169f8eeb71f89f55a378913d.jpeg"
+    }
+]

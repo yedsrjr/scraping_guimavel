@@ -1,0 +1,25 @@
+[project]
+name = "scrap-rcimoveis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Edson Rodrigues",email = "edsonr065@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "html-to-json (>=2.0.0,<3.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "pandas (>=3.0.0,<4.0.0)",
+    "selenium (>=4.40.0,<5.0.0)",
+    "webdriver-manager (>=4.0.2,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "scrap_rcimoveis", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
