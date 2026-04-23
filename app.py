@@ -1,4 +1,6 @@
 import copy
+import re
+import unicodedata
 import zipfile
 from pathlib import Path
 from urllib.parse import urljoin
@@ -21,6 +23,7 @@ IMAGE_ATTRIBUTES = ("src", "data-src", "data-lazy", "srcset")
 SHEET_COLUMNS = [
     "MARCA",
     "NOME",
+    "CARROCERIA",
     "ANO",
     "COR",
     "CAMBIO",
@@ -35,6 +38,127 @@ TECHNICAL_FIELDS = {
     "icon--transmission": "CAMBIO",
     "icon--speedometer": "KM",
     "icon--fuel": "TIPO",
+}
+BODYWORK_TYPES = ("SEDAN", "SUV", "RET", "CAMINHONETE")
+BODYWORK_KEYWORDS = {
+    "CAMINHONETE": {
+        "keywords": {
+            "picape",
+            "pickup",
+            "cabine simples",
+            "cabine dupla",
+            "cs",
+            "cd",
+            "utilitario",
+        },
+        "models": {
+            "saveiro",
+            "strada",
+            "ranger",
+            "hilux",
+            "amarok",
+            "s10",
+            "montana",
+            "frontier",
+            "l200",
+            "toro",
+            "maverick",
+        },
+    },
+    "SUV": {
+        "keywords": {
+            "suv",
+            "crossover",
+            "4x4",
+            "4wd",
+            "awd",
+        },
+        "models": {
+            "tracker",
+            "nivus",
+            "t cross",
+            "tcross",
+            "taos",
+            "tiguan",
+            "compass",
+            "renegade",
+            "pulse",
+            "fastback",
+            "kicks",
+            "creta",
+            "hrv",
+            "hr-v",
+            "wrv",
+            "wr-v",
+            "corolla cross",
+            "rav4",
+            "equinox",
+            "territory",
+            "ecosport",
+            "duster",
+            "captur",
+            "asx",
+            "outlander",
+            "sportage",
+            "sorento",
+            "c4 cactus",
+        },
+    },
+    "SEDAN": {
+        "keywords": {
+            "sedan",
+        },
+        "models": {
+            "civic",
+            "city",
+            "corolla",
+            "versa",
+            "sentra",
+            "cronos",
+            "virtus",
+            "voyage",
+            "jetta",
+            "prisma",
+            "onix plus",
+            "hb20s",
+            "yaris sedan",
+            "logan",
+            "fluence",
+            "ka sedan",
+            "cerato",
+        },
+    },
+    "RET": {
+        "keywords": {
+            "hatch",
+            "liftback",
+            "sportback",
+            "wagon",
+            "perua",
+        },
+        "models": {
+            "gol",
+            "polo",
+            "fox",
+            "up",
+            "onix",
+            "hb20",
+            "argo",
+            "mobi",
+            "kwid",
+            "208",
+            "308",
+            "sandero",
+            "fit",
+            "march",
+            "c3",
+            "palio",
+            "uno",
+            "etios",
+            "yaris",
+            "cooper",
+        },
+    },
 }
 HEADERS = {
     "User-Agent": (
@@ -51,6 +175,17 @@ def limpar_texto(valor):
 
     texto = " ".join(str(valor).split()).strip()
     return texto or None
+
+
+def normalizar_texto_busca(valor):
+    texto = limpar_texto(valor)
+    if not texto:
+        return ""
+
+    texto = unicodedata.normalize("NFKD", texto)
+    texto = "".join(caractere for caractere in texto if not unicodedata.combining(caractere))
+    texto = texto.lower()
+    return re.sub(r"[^a-z0-9]+", " ", texto).strip()
 
 
 def apagar_arquivo_saida(caminho_arquivo):
@@ -149,7 +284,48 @@ def extrair_veiculo(card):
         "LINK": link_anuncio,
     }
     veiculo.update(extrair_info_tecnica(card))
+    veiculo["CARROCERIA"] = inferir_carroceria(veiculo)
     return veiculo
+
+
+def inferir_carroceria(veiculo):
+    texto_base = " ".join(
+        filter(
+            None,
+            [
+                normalizar_texto_busca(veiculo.get("MARCA")),
+                normalizar_texto_busca(veiculo.get("NOME")),
+            ],
+        )
+    )
+
+    if not texto_base:
+        return "RET"
+
+    pontuacoes = {tipo: 0 for tipo in BODYWORK_TYPES}
+
+    for tipo, sinais in BODYWORK_KEYWORDS.items():
+        for palavra in sinais["keywords"]:
+            palavra_normalizada = normalizar_texto_busca(palavra)
+            if palavra_normalizada and palavra_normalizada in texto_base:
+                pontuacoes[tipo] += 3
+
+        for modelo in sinais["models"]:
+            modelo_normalizado = normalizar_texto_busca(modelo)
+            if modelo_normalizado and modelo_normalizado in texto_base:
+                pontuacoes[tipo] += 2
+
+    if "sedan" in texto_base:
+        pontuacoes["SEDAN"] += 3
+    if "hatch" in texto_base:
+        pontuacoes["RET"] += 3
+    if "suv" in texto_base:
+        pontuacoes["SUV"] += 3
+    if "picape" in texto_base or "pickup" in texto_base:
+        pontuacoes["CAMINHONETE"] += 4
+
+    tipo_escolhido = max(BODYWORK_TYPES, key=lambda tipo: pontuacoes[tipo])
+    return tipo_escolhido if pontuacoes[tipo_escolhido] > 0 else "RET"
 
 
 def extrair_total_paginas(soup):

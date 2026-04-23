@@ -19,6 +19,7 @@ Cada veículo é exportado com os seguintes campos:
 - `FOTO`
 - `MARCA`
 - `NOME`
+- `CARROCERIA`
 - `ANO`
 - `COR`
 - `CAMBIO`
@@ -30,15 +31,16 @@ Cada veículo é exportado com os seguintes campos:
 
 A planilha segue a ordem visual do card do site:
 
-1. `FOTO`
-2. `MARCA`
-3. `NOME`
+1. `MARCA`
+2. `NOME`
+3. `CARROCERIA`
 4. `ANO`
 5. `COR`
 6. `CAMBIO`
 7. `KM`
 8. `TIPO`
 9. `VALOR`
+10. `FOTO`
 
 Essa ordem é controlada pela constante `SHEET_COLUMNS` no arquivo [app.py](/c:/Dev/Scrapping/scrap_guimavel/app.py).
 
@@ -52,8 +54,9 @@ O script:
 4. Localiza os cards com o seletor `.card__wrapper a.card`.
 5. Extrai os dados visíveis de cada veículo.
 6. Evita duplicidade usando o link do anúncio como chave principal.
-7. Apaga a planilha anterior.
-8. Gera uma nova planilha `.xlsx`.
+7. Classifica a `CARROCERIA` com inferÃªncia local baseada em marca e modelo.
+8. Apaga a planilha anterior.
+9. Gera uma nova planilha `.xlsx`.
 
 ## Estrutura do card usada na raspagem
 
